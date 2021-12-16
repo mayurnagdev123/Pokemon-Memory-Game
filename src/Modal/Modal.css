@@ -1,0 +1,208 @@
+.modal_game_over {
+    background-image: linear-gradient(180deg, #e47474, #f6b88b, #f8c78d);
+    background-attachment: fixed;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Gluten';
+    width: 30%;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 8px;
+    border: 12px solid #faeadd;
+    top: 16%;
+    animation: modalOpenKeyFrame 2.2s;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes modalOpenKeyFrame {
+    0% {
+        top: -100px;
+    }
+
+    50% {
+        top: 40%;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+.gameOverText {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Gluten';
+}
+
+.gameOverTextHeading {
+    color: black;
+}
+
+.gameOverHomeBtn {
+    bottom: -12%;
+    right: 5%;
+    border-radius: 50%;
+    border: 7px solid coral;
+}
+
+.gameOverBtn {
+    position: absolute;
+    background-color: #fff9e8;
+    padding: 5px 20px;
+}
+
+.gameOverBtn:hover {
+    text-decoration: none !important;
+    background-color: #fff9e8;
+}
+
+.gameOverLabelBtn {
+    top: -11%;
+    font-size: 3rem;
+    left: 30%;
+    pointer-events: none;
+    font-weight: bold;
+    background-image: linear-gradient(180deg, #9dd5eb, #d3b1c8, #f195ae);
+
+}
+
+.home_icon {
+    font-size: 1.5em;
+}
+
+.home_icon::before {
+    font-family: FontAwesome;
+    top: 0;
+    left: -5px;
+    padding-right: 9px;
+    font-size: 4.5rem;
+    content: "\f015";
+}
+
+.gameOverReplayBtn {
+    bottom: -12%;
+    left: 8%;
+    border-radius: 50%;
+    border: 7px solid coral;
+}
+
+.replay_icon_login {
+    font-size: 1.5em;
+}
+
+.replay_icon_login::before {
+    font-family: FontAwesome;
+    font-size: 4.5rem;
+    content: "\f01e";
+}
+
+.gameOverResultDiv {
+    position: absolute;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.homeLink {
+    text-decoration: none !important;
+    color: black;
+}
+
+@media only screen and (max-width:318px) {
+    .modal_game_over {
+        width: 95%;
+    }
+
+    .gameOverLabelBtn {
+        font-size: 2.5rem;
+        left: 15%;
+        top: -9%;
+    }
+
+    .gameOverText {
+        font-size: 2.5rem;
+    }
+
+    .gameOverResultDiv {
+        margin-top: 25%;
+    }
+
+}
+
+@media only screen and (min-width:319px) and (max-width:539px) {
+    .modal_game_over {
+        width: 95%;
+    }
+
+    .gameOverLabelBtn {
+        font-size: 2.5rem;
+        left: 21%;
+        top: -9%;
+    }
+
+    .gameOverText {
+        font-size: 2.5rem;
+    }
+
+    .gameOverResultDiv {
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (min-width:540px) and (max-width:767px) {
+    .modal_game_over {
+        width: 95%;
+    }
+
+    .gameOverLabelBtn {
+        font-size: 2.5rem;
+        left: 31%;
+        top: -9%;
+    }
+
+    .gameOverText {
+        font-size: 2.5rem;
+    }
+
+    .gameOverResultDiv {
+        margin-top: 14%;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .modal_game_over {
+        width: 60%;
+    }
+
+    .gameOverLabelBtn {
+        font-size: 2.5rem;
+        left: 30%;
+        top: -9%;
+    }
+
+    .gameOverText {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1280px) {
+    .modal_game_over {
+        width: 55%;
+    }
+
+    .gameOverLabelBtn {
+        font-size: 2.5rem;
+        left: 35%;
+        top: -9%;
+    }
+
+    .gameOverText {
+        font-size: 2.5rem;
+    }
+
+    .gameOverResultDiv {
+        margin-top: 14%;
+    }
+}

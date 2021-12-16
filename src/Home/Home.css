@@ -1,0 +1,103 @@
+.gameHeading {
+    font-size: 12rem;
+
+}
+
+.gameHeadingDiv {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Gluten';
+    color: white;
+
+}
+
+.levelNameBtn {
+    background: transparent;
+    display: block;
+    border: 1px solid white !important;
+    width: 20rem;
+    height: 4rem;
+    margin: 10px;
+    color: white;
+    text-decoration: none !important;
+}
+
+.levelNameBtn:hover, .levelNameBtn:focus {
+    color: white !important;
+    text-decoration: none !important;
+    background-image: linear-gradient(180deg, #9dd5eb, #d3b1c8, #f195ae);
+
+}
+
+.levelDiv {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.levelLink {
+    text-decoration: none !important;
+}
+
+.gameLevelHeading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:318px) {
+    .gameHeading {
+        font-size: 6rem;
+    }
+
+    .levelDiv {
+        flex-direction: column;
+    }
+
+    .levelNameBtn {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+}
+
+@media only screen and (min-width:319px) and (max-width:768px) {
+    .gameHeading {
+        font-size: 7rem;
+    }
+
+    .gameHeadingDiv {
+        overflow: hidden;
+    }
+
+    .gameLevelHeading {
+        font-size: 24px;
+    }
+
+    .levelDiv {
+        flex-direction: column;
+    }
+
+    .levelNameBtn {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1025px) {
+    .levelDiv {
+        width: 90%;
+    }
+
+    .gameHeading {
+        font-size: 10rem;
+
+    }
+}
+
+@media only screen and (min-width:1026px) and (max-width:1280px) {
+    .levelDiv {
+        width: 65%;
+    }
+}

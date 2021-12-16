@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+}
+
+.scene {
+    width: 100%;
+    height: 200px;
+    perspective: 600px;
+    padding: 0px 4px;
+}
+
+.card--row {
+    padding: 5px;
+    margin: 0px 3px;
+    justify-content: center;
+    display: flex;
+}
+
+.front--text {
+
+    font-family: 'system-ui', sans-serif;
+    font-size: 11rem;
+    font-weight: 400;
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.is-flipped {
+    transform: rotateY(180deg);
+    pointer-events: none;
+}
+
+.is-disabled {
+    pointer-events: none;
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.pokemon--card--face {
+    width: 100%;
+    height: 100%;
+}
+
+.card__face--back {
+    background-color: #faeadd;
+    transform: rotateY(180deg);
+}
+
+.card__face--front {
+    background-image: linear-gradient(180deg, #9dd5eb, #d3b1c8, #f195ae);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#randomCardDiv {
+    background-color: #fff9e8;
+    margin: 0px 90px;
+}
+
+#movesBtn {
+    float: left;
+
+}
+
+.movesAndTimeLabel {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Gluten';
+}
+
+@media only screen and (max-width:320px) {
+    .movesAndTimeLabel {
+        font-size: 2.1rem;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #randomCardDiv {
+
+        margin: 0px 3px;
+    }
+
+    .scene {
+        height: 130px;
+    }
+
+    .front--text {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1300px) {
+    .scene {
+        height: 175px;
+    }
+}
